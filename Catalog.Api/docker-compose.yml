@@ -1,0 +1,23 @@
+version: '3.4'
+
+services:
+  # catalog.api:
+  #   image: ${DOCKER_REGISTRY-}catalogapi
+  #   build:
+  #     context: .
+  #     dockerfile: .
+  catalogdb:
+    image: postgres
+    container_name: catalogdb
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=CatalogDb
+    restart: always
+    ports:
+        - "5432:5432"
+    volumes:
+      - postgres_catalog:/var/lib/postgresql/data/
+      
+volumes:
+  postgres_catalog:
