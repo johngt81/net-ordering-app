@@ -1,0 +1,14 @@
+
+
+Libraries used
+
+Mediatr (https://github.com/jbogard/MediatR)
+
+Carter (https://github.com/CarterCommunity/Carter)
+Provides extension methods for working with ASP.NET Core
+
+Mapster for object mapping
+https://github.com/MapsterMapper/Mapster
+
+Marten (https://github.com/JasperFx/marten)
+Allows using PostgreSQL database engine and its JSON support as a document database. 
